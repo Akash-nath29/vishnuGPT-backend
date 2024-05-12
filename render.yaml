@@ -1,0 +1,14 @@
+# Exported from Render on 2024-05-12T08:11:02Z
+services:
+- type: web
+  name: vishnuGPT
+  runtime: python
+  repo: https://github.com/Akash-nath29/vishnuGPT-backend
+  plan: free
+  envVars:
+  - key: API_KEY
+    sync: false
+  region: singapore
+  buildCommand: pip install -r requirements.txt
+  startCommand: python app.py
+version: "1"
